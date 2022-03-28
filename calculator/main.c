@@ -4,17 +4,20 @@
 #include "main.h"
 
 
+
+
 int main()
 {
-	char* expressionStorage[20];
 
-	char* expression_char = "5+32\0";
+	char* expression_char = "5+3+1\0";
 
-	parser(expression_char);
+	char* result = perform(expression_char);
 
-
-
+	printf("\nresult: %s\n", result);
 
 
+
+	printf("\nresult: %s", addition("999", "999"));
+	
 	return 0;
 }
